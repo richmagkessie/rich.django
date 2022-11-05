@@ -10,9 +10,10 @@
     <table border="1">
       {% for x in myclients %}
       <tr>
-        <td>{{x.id}}</td>
+        <td><a href="update/{{x.id}}">{{x.id}}</a>{{x.id}}</td>
         <td>{{x.firstname}}</td>
         <td>{{x.lastname}}</td>
+        <td><a href="delete/{{x.id}}">Delete</a></td>
       </tr>
       {% endfor %}
     </table>
