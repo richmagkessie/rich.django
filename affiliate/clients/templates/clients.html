@@ -5,7 +5,16 @@
     <title>welcome to work</title>
   </head>
   <body>
+    <h1>Clients</h1>
     <p>Designated to Clients</p>
-
+    <table border="1">
+      {% for x in myclients %}
+      <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.firstname}}</td>
+        <td>{{x.lastname}}</td>
+      </tr>
+      {% endfor %}
+    </table>
   </body>
 </html>
