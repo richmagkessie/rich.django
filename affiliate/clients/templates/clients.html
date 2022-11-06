@@ -1,7 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'clients.css' %}">
     <title>welcome to work</title>
   </head>
   <body>
@@ -20,5 +22,10 @@
     <p>
       <a href="add/">Add a new Client</a>
     </p>
+    <button onclick="myfunc()">Click me</button>
+
+    <script src="{% static 'main.js' %}">
+
+    </script>
   </body>
 </html>
